@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.10)
+project(flappy_8ird C)
+
+include(cmake/cc65.cmake)
+
+add_executable(flappy_8ird
+        src/utilities/helpers.h
+        src/main.c)
+
+set_target_properties(flappy_8ird
+        PROPERTIES
+            OUTPUT_NAME flappy_8ird.c64.prg
+            COMPILE_FLAGS "-v -g -t c64 -Oris -Or --asm-define NODEBUG"
+            LINK_FLAGS "-t c64 -C c64.cfg")

@@ -1,0 +1,12 @@
+{
+  "files.associations": {
+    "c64.h": "c",
+    "_vic2.h": "c",
+    "cstddef": "cpp",
+    "_sid.h": "c",
+    "graphics.h": "c",
+    "helpers.h": "c",
+    "conio.h": "c",
+    "tgi.h": "c"
+  }
+}
